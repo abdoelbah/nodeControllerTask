@@ -8,7 +8,7 @@ const app = express();
 app.use(cors())
 app.use(express.urlencoded({extended : true}))
 
-app.use(check)
+app.use(check())
 app.use(router)
 app.listen(3000 , () => {
     console.log("listening on port 3000 🚀 ")
